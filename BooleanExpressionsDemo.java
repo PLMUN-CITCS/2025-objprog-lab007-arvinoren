@@ -1,29 +1,27 @@
+
 public class BooleanExpressionsDemo {
     public static void main(String[] args) {
-        
-      
-        boolean isSunny = true;  
-        boolean hasClouds = false; 
 
-        int temperature = 25; 
-        int windSpeed = 15; 
-        boolean isHot = temperature > 30; 
-        boolean isBreezy = windSpeed <= 20; 
-        boolean goodWeather = isSunny && !hasClouds; 
-        boolean okWeather = isSunny || isBreezy; 
-        boolean isCloudy = !isSunny; 
-        boolean variableWeather = isSunny ^ hasClouds; 
+        boolean isJavaFun = true;
+        boolean isHomeworkTiring = false;
 
-     
-        System.out.println("Is it sunny? " + isSunny);
-        System.out.println("Are there clouds? " + hasClouds);
-        System.out.println("Temperature: " + temperature + "°C");
-        System.out.println("Wind Speed: " + windSpeed + " km/h");
-        System.out.println("Is it hot outside? " + isHot);
-        System.out.println("Is it breezy? " + isBreezy);
-        System.out.println("Good weather (sunny and no clouds)? " + goodWeather);
-        System.out.println("Is the weather okay (sunny or breezy)? " + okWeather);
-        System.out.println("Is it cloudy? " + isCloudy);
-        System.out.println("Exclusive OR (sunny XOR clouds)? " + variableWeather);
+        int a = 15;
+        int b = 20;
+
+        boolean isAGreater = a > b;
+        boolean bothTrue = isJavaFun && (a < b);
+        boolean eitherTrue = isJavaFun || isHomeworkTiring;
+        boolean notTrue = !isHomeworkTiring;
+        boolean exclusiveOr = isJavaFun ^ isHomeworkTiring;
+        boolean areEqual = a == b;  // Added this line to check equality
+
+        System.out.println("Is Java fun? " + isJavaFun);
+        System.out.println("Is homework tiring? " + isHomeworkTiring);
+        System.out.println("Is 'a' greater than 'b'? " + isAGreater);
+        System.out.println("Are 'a' and 'b' equal? " + areEqual);  // Now referencing the correct variable
+        System.out.println("Both conditions (isJavaFun && a < b): " + bothTrue);
+        System.out.println("Either condition (isJavaFun || isHomeworkTiring): " + eitherTrue);
+        System.out.println("Logical NOT of isHomeworkTiring: " + notTrue);
+        System.out.println("Exclusive OR (isJavaFun ^ isHomeworkTiring): " + exclusiveOr);
     }
 }
