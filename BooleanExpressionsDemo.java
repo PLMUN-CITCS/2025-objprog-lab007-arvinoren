@@ -9,7 +9,7 @@ public class BooleanExpressionsDemo {
         int b = 20;
 
         boolean isAGreater = a > b;
-        boolean bothTrue = isJavaFun && (a < b);
+        boolean bothTrue = isJavaFun && (a<b);
         boolean eitherTrue = isJavaFun || isHomeworkTiring;
         boolean notTrue = !isHomeworkTiring;
         boolean exclusiveOr = isJavaFun ^ isHomeworkTiring;
